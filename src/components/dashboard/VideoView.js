@@ -4,9 +4,9 @@ import VideoWatching from './VideoWatching'
 const VideoView = () => {
 
   const imgData = {
-    thumbnail1: "VideoImage1.png",
-    thumbnail2: "VideoImage2.png",
-    thumbnail3: "VideoImage3.png",
+    thumbnail1: "thumbnail-1.png",
+    thumbnail2: "thumbnail-2.png",
+    thumbnail3: "thumbnail-3.png",
   }
 
   return (

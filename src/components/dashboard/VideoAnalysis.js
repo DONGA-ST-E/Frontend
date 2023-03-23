@@ -122,17 +122,17 @@ const VideoAnalysis = () => {
       </div>
 
       <div className='doughnut'>
-      <Doughnut 
-          data={dataDepartment}
-          plugins = {[
-            {
-              beforeDraw: function(chart) {
-                drawInnerText(chart);
+        <Doughnut 
+            data={dataDepartment}
+            plugins = {[
+              {
+                beforeDraw: function(Doughnut) {
+                  drawInnerText(Doughnut);
+                },
               },
-            },
-          ]}
-          options = {options} />
-      </div>
+            ]}
+            options = {options} />
+        </div>
     </div>
 
   )

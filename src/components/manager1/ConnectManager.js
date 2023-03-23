@@ -3,6 +3,7 @@ import Connector from './Connector'
 
 const ConnectManager = ({setOpen,memoCount,appear,setAppear}) => {
 
+  const arr = ['Connector1.png','Connector2.png','Connector3.png', 'Connector4.svg']
 
    const openChat = ()=>{
       setAppear(false)
@@ -10,14 +11,17 @@ const ConnectManager = ({setOpen,memoCount,appear,setAppear}) => {
 
    }
    
-   
+
 
   return (
     <div className='connectManager'>
-        <Connector/>
-        <Connector/>
-        <Connector/>
-        <Connector/>
+    {arr.map((item,idx)=>{
+                return (
+                <div className='item'>
+                  <img src={item}/>
+                </div>
+                )
+            })}
         <div className='messanger'>
             <img onClick={openChat} src='Chat.svg'/>
             {appear?<div className="alarm">{memoCount}</div>:<></>}
